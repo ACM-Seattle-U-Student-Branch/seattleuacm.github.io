@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+
+
+This is all Vite boilerplate dw bout it (unless its useful to u then maybe worry bout it)
