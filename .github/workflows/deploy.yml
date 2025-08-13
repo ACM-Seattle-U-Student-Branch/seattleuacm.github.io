@@ -1,4 +1,4 @@
-name: Deploy PR Preview to GitHub Pages
+name: Deploy Feature Preview to GitHub Pages
 
 permissions:
   contents: write
@@ -37,9 +37,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: SUACM_site/dist
-          destination_dir: pr-preview/test-deployment
-          keep_files: true
-
-      - name: Output PR preview URL
-        run: |
-          echo "Preview URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-preview/test-deployment"
+          keep_files: false
