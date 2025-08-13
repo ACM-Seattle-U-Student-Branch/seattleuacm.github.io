@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - test
-  push:
-    branches:
-      - 'feature*'
 
 jobs:
   deploy-preview:
@@ -22,16 +19,18 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
+        working-directory: SUACM_site
         run: npm ci
 
       - name: Build project
+        working-directory: SUACM_site
         run: npm run build
 
       - name: Deploy PR preview to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: SUACM_site/dist
           destination_dir: pr-preview/pr-${{ github.event.pull_request.number }}
           keep_files: true
 
