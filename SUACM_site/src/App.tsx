@@ -1,5 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
 import About from './pages/About'
 import Home from './pages/Home'
 import Events from './pages/Events'
@@ -9,12 +10,17 @@ function App() {
 
   return (
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/hacksu" element={<HackSU />} />
-        </Routes>
+        <div className="app">
+          <Header />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/hacksu" element={<HackSU />} />
+            </Routes>
+          </main>
+        </div>
       </BrowserRouter>
   )
 }
