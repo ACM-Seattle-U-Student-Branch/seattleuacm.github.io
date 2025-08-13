@@ -23,8 +23,8 @@ const Events: React.FC = () => {
       id: '1',
       name: 'Fall Panel Discussion',
       date: 'November 7, 2025',
-      venue: 'Seattle University - Student Center',
-      description: 'Join industry professionals and faculty for an engaging discussion on emerging trends in computer science and technology. Network with experts and gain insights into career opportunities.',
+      venue: 'Seattle University - xyz',
+      description: 'Hear directly from Seattle U grad students who’ve recently landed roles at top tech companies. They’ll share tips, strategies, and lessons learned — from tackling tough coding challenges to nailing behavioral questions.',
       status: 'upcoming',
       ctaText: 'Register Now',
       ctaLink: '#register',
@@ -34,7 +34,7 @@ const Events: React.FC = () => {
       id: '2',
       name: 'Git Beginners Workshop',
       date: 'TBD - Coming Soon',
-      venue: 'Seattle University - Computer Science Lab',
+      venue: 'Seattle University - xyz',
       description: 'Learn the fundamentals of Git version control in this hands-on workshop. Perfect for beginners who want to understand how to track changes and collaborate on projects. We\'ll cover essential Git commands, branching strategies, resolving merge conflicts, and best practices for team collaboration. Bring your laptop and get ready to practice with real examples!',
       status: 'upcoming',
       ctaText: 'Get Notified',
@@ -44,11 +44,11 @@ const Events: React.FC = () => {
     {
       id: '3',
       name: 'HackSU 2025',
-      date: 'April 15-16, 2025',
-      venue: 'Seattle University - Main Campus',
+      date: 'Jan xx-xx, 2026',
+      venue: 'Seattle University',
       description: 'Our annual 24-hour hackathon brought together students from across Seattle for an exciting coding experience. Check out the amazing projects that were built!',
       status: 'upcoming',
-      ctaText: 'View Projects',
+      ctaText: 'Participate',
       ctaLink: '#projects',
       category: 'Hackathon'
     }
@@ -65,7 +65,7 @@ const Events: React.FC = () => {
     } else if (event.ctaLink === '#notify') {
       alert(`We'll notify you when ${event.name} is scheduled!`);
     } else if (event.ctaLink === '#projects') {
-      alert(`Project showcase for ${event.name} coming soon!`);
+      alert(`Sign up link for ${event.name} coming soon!`);
     }
   };
 

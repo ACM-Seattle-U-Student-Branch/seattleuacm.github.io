@@ -15,16 +15,28 @@ const Header: React.FC = () => {
 
         {/* Navigation */}
         <nav className="header-nav">
-          <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
+          <Link 
+            to="/" 
+            className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+          >
             Home
           </Link>
-          <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}>
+          <Link 
+            to="/about" 
+            className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
+          >
             About
           </Link>
-          <Link to="/events" className={`nav-link ${location.pathname === '/events' ? 'active' : ''}`}>
+          <Link 
+            to="/events" 
+            className={`nav-link ${location.pathname === '/events' ? 'active' : ''}`}
+          >
             Events
           </Link>
-          <Link to="/hacksu" className={`nav-link ${location.pathname === '/hacksu' ? 'active' : ''}`}>
+          <Link 
+            to="/hacksu" 
+            className={`nav-link ${location.pathname === '/hacksu' ? 'active' : ''}`}
+          >
             HackSU
           </Link>
         </nav>
