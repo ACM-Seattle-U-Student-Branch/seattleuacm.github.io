@@ -18,22 +18,34 @@ body {
 }
 
 .loading-container {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   text-align: center;
   background: white;
   padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
 }
 
 .logo-container {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out 0.2s forwards;
   display: flex;
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
   justify-content: center;
+  width: 100%;
 }
 
 .logo {
@@ -72,6 +84,60 @@ body {
   width: 100%;
 }
 
+/* Loading screen specific styles with animations */
+.loading-container .title {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out 0.4s forwards;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #D90000;
+  text-align: center;
+  width: 100%;
+  background: none;
+  -webkit-text-fill-color: #D90000;
+}
+
+.loading-container .subtitle {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out 0.6s forwards;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%;
+}
+
+.loading-container .spinner {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out 0.8s forwards, spin 1s linear infinite;
+  border: 3px solid #e5e7eb;
+  border-top: 3px solid #D90000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 1rem auto;
+}
+
+.loading-text {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out 1s forwards;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Smooth transition when hiding loading screen */
+.loading-container.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.5s ease-out;
+}
+
 .loading-text {
   font-size: 1.2rem;
   color: #666;
@@ -95,11 +161,29 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
 /* App layout */
 .app {
   min-height: 100vh;
   background: white;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header styles */
