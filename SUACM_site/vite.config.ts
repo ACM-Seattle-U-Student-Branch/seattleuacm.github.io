@@ -5,6 +5,7 @@ import checker from 'vite-plugin-checker'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     tailwindcss(),
@@ -15,4 +16,16 @@ export default defineConfig({
       }
     })
   ],
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom']
+        }
+      }
+    }
+  }
 })
