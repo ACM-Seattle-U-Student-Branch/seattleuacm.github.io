@@ -4,7 +4,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  
+
 on:
   pull_request:
     branches:
@@ -14,7 +14,7 @@ on:
       - 'feature*'
 
 jobs:
- deploy-production:
+  deploy-production:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
