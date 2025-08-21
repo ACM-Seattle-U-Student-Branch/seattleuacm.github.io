@@ -31,7 +31,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: SUACM_site
-        run: npm ci
+        run: npm install
 
       - name: Build project
         working-directory: SUACM_site
