@@ -12,7 +12,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Fun Features Section */}
+      {/* Fun Features Section and more */}
       <section className="fun-features">
         <div className="features-container">
           <h2 className="features-heading">What's the Buzz? 🐝</h2>
