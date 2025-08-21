@@ -6,12 +6,12 @@ permissions:
   id-token: write
 
 on:
-  pull_request:
-    branches:
-      - test
   push:
     branches:
-      - 'feature*'
+      - feature-1
+  pull_request:
+    branches:
+      - feature-1
 
 jobs:
   deploy-production:
@@ -36,6 +36,16 @@ jobs:
       - name: Build project
         working-directory: SUACM_site
         run: npm run build
+
+      - name: List build output
+        run: ls -al SUACM_site/dist
+
+      - name: Fail if dist is missing
+        run: |
+          if [ ! -d "SUACM_site/dist" ]; then
+            echo "Build output directory does not exist!"
+            exit 1
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
