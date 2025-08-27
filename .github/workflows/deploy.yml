@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - feature-1
+      - main
   pull_request:
     branches:
       - feature-1
