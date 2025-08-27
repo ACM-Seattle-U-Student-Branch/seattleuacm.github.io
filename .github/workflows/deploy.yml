@@ -1,0 +1,61 @@
+name: Deploy Feature Preview to GitHub Pages
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+on:
+  push:
+    branches:
+      - feature-1
+      - main
+  pull_request:
+    branches:
+      - feature-1
+
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        working-directory: SUACM_site
+        run: npm install
+
+      - name: Build project
+        working-directory: SUACM_site
+        run: npm run build
+
+      - name: List build output
+        run: ls -al SUACM_site/dist
+
+      - name: Fail if dist is missing
+        run: |
+          if [ ! -d "SUACM_site/dist" ]; then
+            echo "Build output directory does not exist!"
+            exit 1
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: SUACM_site/dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Deployed to GitHub Pages
+        run: echo "Deployed to GitHub Pages at ${{ steps.deployment.outputs.page_url }}"
