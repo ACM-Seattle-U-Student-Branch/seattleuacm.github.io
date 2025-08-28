@@ -2,12 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/su_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta name="description" content="Seattle University ACM" />
+    <title>SU ACM - Seattle University</title>
+    
+    <!-- Preload logos for better performance -->
+    <link rel="preload" href="/su_logo.png" as="image" />
+    <link rel="preload" href="/acm_logo.png" as="image" />
+    
+
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Loading screen with SU and ACM branding -->
+    <div class="loading-container">
+      <div class="logo-container">
+        <img src="/su_logo.png" alt="Seattle University Logo" class="logo" />
+        <img src="/acm_logo.png" alt="ACM Logo" class="logo" />
+      </div>
+      
+      <h1 class="title">SU ACM</h1>
+      <p class="subtitle">Seattle University Association for Computing Machinery</p>
+      
+      <div class="spinner"></div>
+      <p class="loading-text">Loading SU ACM...</p>
+    </div>
+    
+    <!-- React app root (hidden until loaded) -->
+    <div id="root" style="display: none;"></div>
+    
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Hide loading screen when React app is ready -->
+    <script>
+      window.addEventListener('load', () => {
+        // Give React a moment to render
+        setTimeout(() => {
+          const loadingContainer = document.querySelector('.loading-container');
+          const root = document.getElementById('root');
+          
+          if (loadingContainer && root) {
+            // Add fade-out animation
+            loadingContainer.classList.add('fade-out');
+            
+            // Hide loading screen after animation
+            setTimeout(() => {
+              loadingContainer.style.display = 'none';
+              root.style.display = 'block';
+              
+              // Fade in the React app
+              root.style.opacity = '0';
+              root.style.animation = 'fadeIn 0.5s ease-in forwards';
+            }, 500);
+          }
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
