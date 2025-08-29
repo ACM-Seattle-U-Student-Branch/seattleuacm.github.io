@@ -10,10 +10,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     checker({
-      typescript: true,
-      eslint: {
-        lintCommand: 'eslint "./src/**/*.{ts,tsx}"'
-      }
+      typescript: true
     })
   ],
   build: {

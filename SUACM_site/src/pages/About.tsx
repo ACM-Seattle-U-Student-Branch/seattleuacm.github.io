@@ -4,10 +4,19 @@ import React from 'react'
 const About: React.FC = () => {
   return (
     <div className="page-content">
-      {/* Hero Section */}
-      <section className="about-hero">
-        <div className="about-hero-content">
-          <h1>About SU ACM</h1>
+      {/* Hero Section with Background Image */}
+      <section className="hero-welcome-section">
+        <div className="hero-background">
+          <img src="/about.png" alt="About SU ACM Background" className="hero-bg-image" />
+        </div>
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <div className="fun-welcome">
+            <h1>About SU ACM</h1>
+            <p className="fun-description">
+              Building the future of technology through community, innovation, and collaboration
+            </p>
+          </div>
         </div>
       </section>
 
