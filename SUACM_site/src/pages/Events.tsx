@@ -24,7 +24,7 @@ const Events: React.FC = () => {
       name: 'Fall Panel Discussion',
       date: 'November 7, 2025',
       venue: 'Seattle University - xyz',
-      description: 'Hear directly from Seattle U grad students who’ve recently landed roles at top tech companies. They’ll share tips, strategies, and lessons learned — from tackling tough coding challenges to nailing behavioral questions.',
+      description: 'Hear directly from Seattle U grad students who\'ve recently landed roles at top tech companies. They\'ll share tips, strategies, and lessons learned — from tackling tough coding challenges to nailing behavioral questions.',
       status: 'upcoming',
       ctaText: 'Register Now',
       ctaLink: '#register',
@@ -81,10 +81,20 @@ const Events: React.FC = () => {
 
   return (
     <div className="page-content events-page">
-      {/* Header Section */}
-      <section className="welcome-section">
-        <h1>SU ACM Events</h1>
-        <p>Discover exciting opportunities to learn, network, and grow with our community</p>
+      {/* Hero Section with Background Image */}
+      <section className="hero-welcome-section">
+        <div className="hero-background">
+          <img src="/events.png" alt="SU ACM Events Background" className="hero-bg-image" />
+        </div>
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <div className="fun-welcome">
+            <h1>SU ACM Events</h1>
+            <p className="fun-description">
+              Discover exciting opportunities to learn, network, and grow with our community
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Filter Section */}

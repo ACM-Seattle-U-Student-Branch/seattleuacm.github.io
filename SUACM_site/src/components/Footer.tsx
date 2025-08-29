@@ -24,8 +24,9 @@ const Footer: React.FC = () => {
           <h4>Connect With Us</h4>
           <ul className="footer-links">
             <li><a href="https://discord.gg/suacm" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li><a href="mailto:acm@seattleu.edu">// checkemail@seattleu.edu</a></li>
-            <li><a href="connectsu link" target="_blank" rel="noopener noreferrer">ConnectSU</a></li>
+            <li><a href="mailto:suacmsc@seattleu.edu">suacmsc@seattleu.edu</a></li>
+            <li><a href="https://seattleu.campuslabs.com/engage/organization/suacm" target="_blank" rel="noopener noreferrer">ConnectSU</a></li>
+            <li><a href="https://www.instagram.com/acmseattleu/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           </ul>
         </div>
         

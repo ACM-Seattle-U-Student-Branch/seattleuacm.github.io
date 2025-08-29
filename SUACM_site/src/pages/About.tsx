@@ -4,10 +4,19 @@ import React from 'react'
 const About: React.FC = () => {
   return (
     <div className="page-content">
-      {/* Hero Section */}
-      <section className="about-hero">
-        <div className="about-hero-content">
-          <h1>About SU ACM</h1>
+      {/* Hero Section with Background Image */}
+      <section className="hero-welcome-section">
+        <div className="hero-background">
+          <img src="/about.png" alt="About SU ACM Background" className="hero-bg-image" />
+        </div>
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <div className="fun-welcome">
+            <h1>About SU ACM</h1>
+            <p className="fun-description">
+              Building the future of technology through community, innovation, and collaboration
+            </p>
+          </div>
         </div>
       </section>
 
@@ -83,18 +92,22 @@ const About: React.FC = () => {
           <h2>Our Values</h2>
           <div className="values-grid">
             <div className="value-item">
+              <div className="value-emoji">🤝</div>
               <h3>Inclusivity</h3>
               <p>We welcome students from all backgrounds and skill levels</p>
             </div>
             <div className="value-item">
+              <div className="value-emoji">💡</div>
               <h3>Innovation</h3>
               <p>We encourage creative thinking and problem-solving</p>
             </div>
             <div className="value-item">
+              <div className="value-emoji">👥</div>
               <h3>Collaboration</h3>
               <p>We believe in the power of working together</p>
             </div>
             <div className="value-item">
+              <div className="value-emoji">⭐</div>
               <h3>Excellence</h3>
               <p>We strive for quality in everything we do</p>
             </div>
@@ -115,7 +128,7 @@ const About: React.FC = () => {
               <span>Join Our Events</span>
               <span className="btn-emoji">📅</span>
             </a>
-            <a href="mailto:acm@seattleu.edu" className="about-btn">
+            <a href="mailto:suacmsc@seattleu.edu" className="about-btn">
               <span>Contact Us</span>
               <span className="btn-emoji">📧</span>
             </a>

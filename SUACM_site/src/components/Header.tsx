@@ -9,7 +9,6 @@ const Header: React.FC = () => {
       <div className="header-content">
         {/* Logo section - now clickable */}
         <Link to="/" className="logo-section">
-          <img src="/su_logo.png" alt="Seattle University Logo" className="header-logo" />
           <img src="/acm_logo.png" alt="ACM Logo" className="header-logo" />
         </Link>
 

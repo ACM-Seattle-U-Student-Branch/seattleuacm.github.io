@@ -3,9 +3,24 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* SUACM Logo Color Theme - Balanced with mint, pink, and orange */
+  --primary-bg: #1a1a1a;
+  --secondary-bg: #2d2d2d;
+  --accent-white: #ffffff;
+  --accent-mint: #4ade80; /* Keep the mint green */
+  --accent-orange: #ea580c;
+  --accent-pink: #ec4899;
+  --accent-hot-pink: #f973ab; /* Added brighter pink for variety */
+  --accent-red: #dc2626;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --border-color: #374151;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--primary-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +30,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--accent-mint);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--accent-white);
 }
 
 body {
@@ -28,11 +43,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: var(--text-primary);
 }
 
 button {
@@ -42,27 +60,32 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--secondary-bg);
+  color: var(--text-primary);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s ease;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--accent-mint);
+  background-color: var(--accent-mint);
+  color: var(--primary-bg);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto var(--accent-mint);
 }
 
+/* Remove light theme preferences - we want consistent dark theme */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--text-primary);
+    background-color: var(--primary-bg);
   }
   a:hover {
-    color: #747bff;
+    color: var(--accent-white);
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
   }
 }

@@ -4,18 +4,25 @@ import React from 'react';
 const HackSU: React.FC = () => {
   return (
     <div className="page-content">
-      {/* Hero Section */}
-      <section className="hero-section">
+      {/* Hero Section with Background Image */}
+      <section className="hero-welcome-section">
+        <div className="hero-background">
+          <img src="/hacksu.png" alt="HackSU Background" className="hero-bg-image" />
+        </div>
+        <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>HackSU 2025</h1>
-          <p>Seattle University's Premier 24-Hour Hackathon</p>
-          <div className="cta-buttons">
-            <a href="#about" className="cta-button">ABOUT HACKSU '25</a>
-            <a href="#sponsorship" className="cta-button">SPONSORSHIP PACKAGES</a>
+          <div className="fun-welcome">
+            <h1>HackSU 2025</h1>
+            <p className="fun-description">
+              Seattle University's Premier 24-Hour Hackathon
+            </p>
+            <div className="cta-buttons">
+              <a href="#about" className="cta-button">ABOUT HACKSU '25</a>
+              <a href="/Seattle University ACM Sponsor Information.pdf" target="_blank" rel="noopener noreferrer" className="cta-button">SPONSORSHIP PACKAGES</a>
+            </div>
           </div>
         </div>
       </section>
-
 
       {/* About HackSU Section */}
       <section id="about" className="content-section">
@@ -35,20 +42,20 @@ const HackSU: React.FC = () => {
       </section>
 
       {/* Event Details Section */}
-      <section className="content-section" style={{ background: '#f8fafc' }}>
+      <section className="content-section hacksu-details-section">
         <h2>Event Details</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
-          <div style={{ textAlign: 'center', padding: '1.5rem', background: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-            <h3 style={{ color: '#D90000', marginBottom: '1rem' }}>Duration</h3>
-            <p style={{ fontSize: '1.1rem', color: '#666' }}>24 Hours of Non-Stop Innovation</p>
+        <div className="hacksu-details-grid">
+          <div className="hacksu-detail-card">
+            <h3>Duration</h3>
+            <p>24 Hours of Non-Stop Innovation</p>
           </div>
-          <div style={{ textAlign: 'center', padding: '1.5rem', background: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-            <h3 style={{ color: '#D90000', marginBottom: '1rem' }}>Participants</h3>
-            <p style={{ fontSize: '1.1rem', color: '#666' }}>Students from Across Seattle</p>
+          <div className="hacksu-detail-card">
+            <h3>Participants</h3>
+            <p>Students from Across Seattle</p>
           </div>
-          <div style={{ textAlign: 'center', padding: '1.5rem', background: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-            <h3 style={{ color: '#D90000', marginBottom: '1rem' }}>Focus</h3>
-            <p style={{ fontSize: '1.1rem', color: '#666' }}>Real-World Problem Solving</p>
+          <div className="hacksu-detail-card">
+            <h3>Focus</h3>
+            <p>Real-World Problem Solving</p>
           </div>
         </div>
       </section>
@@ -66,8 +73,8 @@ const HackSU: React.FC = () => {
           and budget. Contact us to learn more about how you can be part of this exciting 
           event and help shape the future of technology.
         </p>
-        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-          <a href="email here" className="cta-button">Contact Us About Sponsorship</a>
+        <div className="hacksu-cta">
+          <a href="mailto:suacmsc@seattleu.edu" className="cta-button">Contact Us About Sponsorship</a>
         </div>
       </section>
     </div>
