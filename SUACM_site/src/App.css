@@ -1063,6 +1063,28 @@ body {
   margin-top: 3rem;
 }
 
+.value-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.value-emoji {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.value-item h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.value-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 .value-item:nth-child(1) h3 {
   color: var(--accent-mint);
 }
@@ -1077,23 +1099,6 @@ body {
 
 .value-item:nth-child(4) h3 {
   color: var(--accent-mint);
-}
-
-.value-item {
-  text-align: center;
-  padding: 1.5rem;
-}
-
-.value-item h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--accent-pink);
-  margin-bottom: 1rem;
-}
-
-.value-item p {
-  color: var(--text-secondary);
-  line-height: 1.6;
 }
 
 .about-cta {

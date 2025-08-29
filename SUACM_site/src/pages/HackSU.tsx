@@ -18,7 +18,7 @@ const HackSU: React.FC = () => {
             </p>
             <div className="cta-buttons">
               <a href="#about" className="cta-button">ABOUT HACKSU '25</a>
-              <a href="#sponsorship" className="cta-button">SPONSORSHIP PACKAGES</a>
+              <a href="/Seattle University ACM Sponsor Information.pdf" target="_blank" rel="noopener noreferrer" className="cta-button">SPONSORSHIP PACKAGES</a>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const HackSU: React.FC = () => {
           event and help shape the future of technology.
         </p>
         <div className="hacksu-cta">
-          <a href="email here" className="cta-button">Contact Us About Sponsorship</a>
+          <a href="mailto:suacmsc@seattleu.edu" className="cta-button">Contact Us About Sponsorship</a>
         </div>
       </section>
     </div>

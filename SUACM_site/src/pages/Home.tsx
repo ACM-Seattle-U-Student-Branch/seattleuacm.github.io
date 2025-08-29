@@ -50,7 +50,7 @@ const Home: React.FC = () => {
           develop your skills, and contribute to our vibrant academic community.
         </p>
         <div className="fun-cta">
-          <a href="/about" className="fun-btn">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScn3_lLTRw1opTcB3zpXs0-Lry-GxzRBMYLvgMoLUpHD9sxXA/viewform" target="_blank" rel="noopener noreferrer" className="fun-btn">
             <span>Newsletter Signup</span>
             <span className="btn-emoji">📧</span>
           </a>

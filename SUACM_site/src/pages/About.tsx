@@ -92,18 +92,22 @@ const About: React.FC = () => {
           <h2>Our Values</h2>
           <div className="values-grid">
             <div className="value-item">
+              <div className="value-emoji">🤝</div>
               <h3>Inclusivity</h3>
               <p>We welcome students from all backgrounds and skill levels</p>
             </div>
             <div className="value-item">
+              <div className="value-emoji">💡</div>
               <h3>Innovation</h3>
               <p>We encourage creative thinking and problem-solving</p>
             </div>
             <div className="value-item">
+              <div className="value-emoji">👥</div>
               <h3>Collaboration</h3>
               <p>We believe in the power of working together</p>
             </div>
             <div className="value-item">
+              <div className="value-emoji">⭐</div>
               <h3>Excellence</h3>
               <p>We strive for quality in everything we do</p>
             </div>
