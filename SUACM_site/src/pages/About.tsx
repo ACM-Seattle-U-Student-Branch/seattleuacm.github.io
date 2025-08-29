@@ -128,7 +128,7 @@ const About: React.FC = () => {
               <span>Join Our Events</span>
               <span className="btn-emoji">📅</span>
             </a>
-            <a href="mailto:acm@seattleu.edu" className="about-btn">
+            <a href="mailto:suacmsc@seattleu.edu" className="about-btn">
               <span>Contact Us</span>
               <span className="btn-emoji">📧</span>
             </a>
