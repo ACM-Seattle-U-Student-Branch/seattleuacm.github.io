@@ -4,33 +4,39 @@ import React from 'react'
 const Home: React.FC = () => {
   return (
     <div className="page-content">
-      {/* Welcome Section */}
-      <section className="welcome-section">
-        <div className="fun-welcome">
-          <h1>Hey there, welcome to SU ACM!</h1>
-          <p className="fun-description">We're not just another student group - we're your coding comrades, your debugging buddies, and your gateway to all things tech!</p>
+      {/* Hero Welcome Section with Background Image */}
+      <section className="hero-welcome-section">
+        <div className="hero-background">
+          <img src="/Background.png" alt="SU ACM Background" className="hero-bg-image" />
+          <div className="hero-overlay"></div>
+        </div>
+        <div className="hero-content">
+          <div className="fun-welcome">
+            <h1>Welcome to SU ACM</h1>
+            <p className="fun-description">Seattle University's premier computer science organization, fostering innovation, collaboration, and excellence in technology education and research.</p>
+          </div>
         </div>
       </section>
 
-      {/* Fun Features Section and more */}
+      {/* Core Mission Section */}
       <section className="fun-features">
         <div className="features-container">
-          <h2 className="features-heading">What's the Buzz? 🐝</h2>
+          <h2 className="features-heading">Our Mission</h2>
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">🚀</div>
-              <h3>Build Cool Stuff</h3>
-              <p>From hackathons to workshops, create projects that actually matter</p>
+              <h3>Innovation & Development</h3>
+              <p>Facilitate hands-on learning through hackathons, workshops, and collaborative projects that advance technical skills and creativity</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🤝</div>
-              <h3>Meet Your People</h3>
-              <p>Connect with fellow coders, industry professionals, mentors, and tech enthusiasts</p>
+              <h3>Community Building</h3>
+              <p>Create meaningful connections between students, faculty, industry professionals, and technology enthusiasts</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">💡</div>
-              <h3>Learn & Grow</h3>
-              <p>Pick up new skills, discover emerging tech, and level up your game</p>
+              <h3>Knowledge & Growth</h3>
+              <p>Provide opportunities to explore emerging technologies, develop new competencies, and advance professional development</p>
             </div>
           </div>
         </div>
@@ -38,36 +44,36 @@ const Home: React.FC = () => {
 
       {/* Get Involved Section */}
       <section className="content-section">
-        <h2>Ready to Jump In? 🎯</h2>
+        <h2>Join Our Community</h2>
         <p className="fun-description">
-          Don't just sit there staring at your screen - let's make something awesome happen! 
-          Whether you're a freshman or a grad student, there's a spot for you here.
+          Whether you're a first-year student or a graduate researcher, SU ACM offers diverse opportunities to engage with technology, 
+          develop your skills, and contribute to our vibrant academic community.
         </p>
         <div className="fun-cta">
-          <a href="/about" className="fun-btn">
-            <span>Join Our Newsletter</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScn3_lLTRw1opTcB3zpXs0-Lry-GxzRBMYLvgMoLUpHD9sxXA/viewform" target="_blank" rel="noopener noreferrer" className="fun-btn">
+            <span>Newsletter Signup</span>
             <span className="btn-emoji">📧</span>
           </a>
           <a href="/events" className="fun-btn">
-            <span>Upcoming Events</span>
+            <span>View Events</span>
             <span className="btn-emoji">📅</span>
           </a>
           <a href="/hacksu" className="fun-btn">
-            <span>HackSU Time!</span>
+            <span>HackSU 2025</span>
             <span className="btn-emoji">⚡</span>
           </a>
         </div>
       </section>
 
-      {/* Fun Fact Section */}
+      {/* About Section */}
       <section className="fun-fact">
         <div className="fact-container">
           <p className="fact-text">
             Seattle University's chapter of Association for Computing Machinery (ACM) is the largest computer
-            science club on campus, with over 600 members. We at ACM deeply value the interdisciplinary
-            nature of computer science and its ability to intersect with various fields. We aim to cultivate a
-            community where diverse backgrounds and perspective thrive alongside collaboration and
-            connection.
+            science organization on campus, serving over 600 active members. We value the interdisciplinary
+            nature of computer science and its ability to intersect with various fields. Our mission is to cultivate a
+            community where diverse backgrounds and perspectives thrive alongside collaboration and
+            meaningful connections.
           </p>
           <div className="fun-stats">
             <div className="stat">
@@ -76,11 +82,11 @@ const Home: React.FC = () => {
             </div>
             <div className="stat">
               <span className="stat-number">24</span>
-              <span className="stat-label">Hours of HackSU Fun</span>
+              <span className="stat-label">Hours of HackSU</span>
             </div>
             <div className="stat">
               <span className="stat-number">∞</span>
-              <span className="stat-label">Possibilities</span>
+              <span className="stat-label">Opportunities</span>
             </div>
           </div>
         </div>
