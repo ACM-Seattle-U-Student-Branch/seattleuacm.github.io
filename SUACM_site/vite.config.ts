@@ -11,7 +11,7 @@ export default defineConfig(() => {
   const outDir = env.OUT_DIR || ((env.GITHUB_ACTIONS || env.CI) ? 'dist' : '../docs')
 
   return {
-    base: '/',
+    base: '/seattleuacm.github.io/',
     plugins: [
       react(),
       tailwindcss(),
