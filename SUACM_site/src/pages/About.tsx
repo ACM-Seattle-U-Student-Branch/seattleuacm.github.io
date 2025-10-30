@@ -7,7 +7,7 @@ const About: React.FC = () => {
       {/* Hero Section with Background Image */}
       <section className="hero-welcome-section">
         <div className="hero-background">
-          <img src="/about.png" alt="About SU ACM Background" className="hero-bg-image" />
+          <img src={import.meta.env.BASE_URL + 'about.png'} alt="About SU ACM Background" className="hero-bg-image" />
         </div>
         <div className="hero-overlay"></div>
         <div className="hero-content">

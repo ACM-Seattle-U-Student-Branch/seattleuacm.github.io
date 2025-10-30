@@ -7,7 +7,7 @@ const HackSU: React.FC = () => {
       {/* Hero Section with Background Image */}
       <section className="hero-welcome-section">
         <div className="hero-background">
-          <img src="/hacksu.png" alt="HackSU Background" className="hero-bg-image" />
+          <img src={import.meta.env.BASE_URL + 'hacksu.png'} alt="HackSU Background" className="hero-bg-image" />
         </div>
         <div className="hero-overlay"></div>
         <div className="hero-content">

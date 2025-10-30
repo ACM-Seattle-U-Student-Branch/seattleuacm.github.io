@@ -7,7 +7,7 @@ const Home: React.FC = () => {
       {/* Hero Welcome Section with Background Image */}
       <section className="hero-welcome-section">
         <div className="hero-background">
-          <img src="/Background.png" alt="SU ACM Background" className="hero-bg-image" />
+          <img src={import.meta.env.BASE_URL + 'Background.png'} alt="SU ACM Background" className="hero-bg-image" />
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
