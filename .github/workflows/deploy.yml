@@ -8,12 +8,13 @@ permissions:
 on:
   push:
     branches:
-      - feature-1
       - main
+      - hacksu-improvements
   pull_request:
     branches:
-      - feature-1
       - main
+      - hacksu-improvements
+  workflow_dispatch:
 
 jobs:
   deploy-production:
