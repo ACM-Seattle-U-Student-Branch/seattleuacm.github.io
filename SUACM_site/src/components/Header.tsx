@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="header-content">
         {/* Logo section - now clickable */}
         <Link to="/" className="logo-section">
-          <img src="/acm_logo.png" alt="ACM Logo" className="header-logo" />
+          <img src={import.meta.env.BASE_URL + 'acm_logo.png'} alt="ACM Logo" className="header-logo" />
         </Link>
 
         {/* Navigation */}
