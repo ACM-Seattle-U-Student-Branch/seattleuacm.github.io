@@ -12,12 +12,13 @@ const HackSU: React.FC = () => {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="fun-welcome">
-            <h1>HackSU 2025</h1>
+            <h1>HackSU 2026</h1>
             <p className="fun-description">
-              Seattle University's Premier 24-Hour Hackathon
+              Seattle University's Student Led 24-Hour Hackathon
             </p>
-            <div className="cta-buttons">
-              <a href="#about" className="cta-button">ABOUT HACKSU '25</a>
+            <div className="cta-buttons pt-4">
+              <a href="https://forms.gle/Rn2oQT78AvZUhvk57" className="cta-button" target="_blank">INTEREST FORM</a>
+              <a href="https://forms.gle/CWZbx9jL4niy3mqD9" className="cta-button" target="_blank">VOLUNTEER FORM</a>
               <a href="/Seattle University ACM Sponsor Information.pdf" target="_blank" rel="noopener noreferrer" className="cta-button">SPONSORSHIP PACKAGES</a>
             </div>
           </div>
@@ -74,7 +75,7 @@ const HackSU: React.FC = () => {
           event and help shape the future of technology.
         </p>
         <div className="hacksu-cta">
-          <a href="mailto:suacmsc@seattleu.edu" className="cta-button">Contact Us About Sponsorship</a>
+          <a href="mailto:seattleuacm@gmail.com" className="cta-button">Contact Us About Sponsorship</a>
         </div>
       </section>
     </div>

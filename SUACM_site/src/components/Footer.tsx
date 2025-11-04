@@ -23,10 +23,10 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h4>Connect With Us</h4>
           <ul className="footer-links">
-            <li><a href="https://discord.gg/suacm" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li><a href="mailto:suacmsc@seattleu.edu">suacmsc@seattleu.edu</a></li>
-            <li><a href="https://seattleu.campuslabs.com/engage/organization/suacm" target="_blank" rel="noopener noreferrer">ConnectSU</a></li>
+            <li><a href="https://discord.gg/3FgCPuFu3v" target="_blank" rel="noopener noreferrer">Discord</a></li>
             <li><a href="https://www.instagram.com/acmseattleu/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/su-acm-5a1186332/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://seattleuniversity.campusgroups.com/ACM/club_signup" target="_blank" rel="noopener noreferrer">ConnectSU</a></li>
           </ul>
         </div>
         

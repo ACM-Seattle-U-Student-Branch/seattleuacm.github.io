@@ -1,5 +1,6 @@
 // Landing page
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home: React.FC = () => {
   return (
@@ -50,18 +51,18 @@ const Home: React.FC = () => {
           develop your skills, and contribute to our vibrant academic community.
         </p>
         <div className="fun-cta">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScn3_lLTRw1opTcB3zpXs0-Lry-GxzRBMYLvgMoLUpHD9sxXA/viewform" target="_blank" rel="noopener noreferrer" className="fun-btn">
-            <span>Newsletter Signup</span>
-            <span className="btn-emoji">📧</span>
+          <a href="https://discord.gg/3FgCPuFu3v" target="_blank" rel="noopener noreferrer" className="fun-btn">
+            <span>Join our Discord</span>
+            <span className="btn-emoji">🗣️</span>
           </a>
-          <a href="/events" className="fun-btn">
+          <Link to="/events" className="fun-btn">
             <span>View Events</span>
             <span className="btn-emoji">📅</span>
-          </a>
-          <a href="/hacksu" className="fun-btn">
-            <span>HackSU 2025</span>
+          </Link>
+          <Link to="/hacksu" className="fun-btn">
+            <span>HackSU 2026</span>
             <span className="btn-emoji">⚡</span>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -70,7 +71,7 @@ const Home: React.FC = () => {
         <div className="fact-container">
           <p className="fact-text">
             Seattle University's chapter of Association for Computing Machinery (ACM) is the largest computer
-            science organization on campus, serving over 600 active members. We value the interdisciplinary
+            science organization on campus, serving over 600 members. We value the interdisciplinary
             nature of computer science and its ability to intersect with various fields. Our mission is to cultivate a
             community where diverse backgrounds and perspectives thrive alongside collaboration and
             meaningful connections.
@@ -78,7 +79,7 @@ const Home: React.FC = () => {
           <div className="fun-stats">
             <div className="stat">
               <span className="stat-number">600+</span>
-              <span className="stat-label">Active Members</span>
+              <span className="stat-label">Members</span>
             </div>
             <div className="stat">
               <span className="stat-number">24</span>
