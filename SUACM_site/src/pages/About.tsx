@@ -1,5 +1,6 @@
 // About Us page
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About: React.FC = () => {
   return (
@@ -98,7 +99,7 @@ const About: React.FC = () => {
             </div>
             <div className="value-item">
               <div className="value-emoji">💡</div>
-              <h3>Innovation</h3>
+              <h3>Creativity</h3>
               <p>We encourage creative thinking and problem-solving</p>
             </div>
             <div className="value-item">
@@ -124,11 +125,11 @@ const About: React.FC = () => {
             or a senior looking to mentor others, there's a place for you in SU ACM.
           </p>
           <div className="about-cta">
-            <a href="/events" className="about-btn">
+            <Link to="/events" className="fun-btn">
               <span>Join Our Events</span>
               <span className="btn-emoji">📅</span>
-            </a>
-            <a href="mailto:suacmsc@seattleu.edu" className="about-btn">
+            </Link>
+            <a href="mailto:seattleuacm@gmail.com" className="about-btn">
               <span>Contact Us</span>
               <span className="btn-emoji">📧</span>
             </a>
