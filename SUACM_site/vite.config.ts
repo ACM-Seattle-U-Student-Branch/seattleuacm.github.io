@@ -8,7 +8,7 @@ export default defineConfig(() => {
   // Allow config to work without Node types installed
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const env: any = (globalThis as any)?.process?.env ?? {}
-  const outDir = env.OUT_DIR || ((env.GITHUB_ACTIONS || env.CI) ? 'dist' : '../docs')
+  let outDir = env.OUT_DIR || ((env.GITHUB_ACTIONS || env.CI) ? 'dist' : '../docs')
 
   return {
     base: '/seattleuacm.github.io/',
