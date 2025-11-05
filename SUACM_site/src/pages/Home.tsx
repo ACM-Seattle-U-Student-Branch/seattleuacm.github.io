@@ -14,7 +14,7 @@ const Home: React.FC = () => {
         <div className="hero-content">
           <div className="fun-welcome">
             <h1>Welcome to SU ACM</h1>
-            <p className="fun-description">Seattle University's premier computer science organization, fostering innovation, collaboration, and excellence in technology education and research.</p>
+            <p className="fun-description">Seattle University's student-led computer science organization, fostering innovation, collaboration, and excellence in technology education and research.</p>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
       <section className="content-section">
         <h2>Join Our Community</h2>
         <p className="fun-description">
-          Whether you're a first-year student or a graduate researcher, SU ACM offers diverse opportunities to engage with technology, 
+          Whether you're a first-year or a graduate student, SU ACM offers diverse opportunities to engage with technology, 
           develop your skills, and contribute to our vibrant academic community.
         </p>
         <div className="fun-cta">
