@@ -8,11 +8,9 @@ permissions:
 on:
   push:
     branches:
-      - feature-1
       - main
   pull_request:
     branches:
-      - feature-1
       - main
 
 jobs:
@@ -35,8 +33,11 @@ jobs:
         working-directory: SUACM_site
         run: npm install
 
-      - name: Build project
+      - name: Build Vite project
         working-directory: SUACM_site
+        env:
+          # Ensures Vite output matches what your workflow expects
+          CI: true
         run: npm run build
 
       - name: List build output
