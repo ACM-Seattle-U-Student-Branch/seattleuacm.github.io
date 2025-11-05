@@ -47,7 +47,7 @@ const Home: React.FC = () => {
       <section className="content-section">
         <h2>Join Our Community</h2>
         <p className="fun-description">
-          Whether you're a first-year student or a graduate researcher, SU ACM offers diverse opportunities to engage with technology, 
+          Whether you're a first-year or a graduate student, SU ACM offers diverse opportunities to engage with technology, 
           develop your skills, and contribute to our vibrant academic community.
         </p>
         <div className="fun-cta">
