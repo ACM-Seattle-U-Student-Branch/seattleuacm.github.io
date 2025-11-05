@@ -14,7 +14,7 @@ const Home: React.FC = () => {
         <div className="hero-content">
           <div className="fun-welcome">
             <h1>Welcome to SU ACM</h1>
-            <p className="fun-description">Seattle University's premier computer science organization, fostering innovation, collaboration, and excellence in technology education and research.</p>
+            <p className="fun-description">Seattle University's student-led computer science organization, fostering innovation, collaboration, and excellence in technology education and research.</p>
           </div>
         </div>
       </section>
