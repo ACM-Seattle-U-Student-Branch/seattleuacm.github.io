@@ -70,7 +70,7 @@ const About: React.FC = () => {
           <div className="about-story">
             <p className="about-text">
               Founded by passionate computer science students at Seattle University, SU ACM has grown 
-              from a small study group to the largest tech organization on campus. Our journey began 
+              from a small study group to the largest student clubs on campus. Our journey began 
               with a simple idea: that learning computer science shouldn't happen in isolation.
             </p>
             <p className="about-text">
