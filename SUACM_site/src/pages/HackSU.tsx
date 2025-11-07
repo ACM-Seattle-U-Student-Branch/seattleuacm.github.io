@@ -19,7 +19,7 @@ const HackSU: React.FC = () => {
             <div className="cta-buttons pt-4">
               <a href="https://forms.gle/Rn2oQT78AvZUhvk57" className="cta-button" target="_blank">INTEREST FORM</a>
               <a href="https://forms.gle/CWZbx9jL4niy3mqD9" className="cta-button" target="_blank">VOLUNTEER FORM</a>
-              <a href="/Seattle University ACM Sponsor Information.pdf" target="_blank" rel="noopener noreferrer" className="cta-button">SPONSORSHIP PACKAGES</a>
+                <a href={import.meta.env.BASE_URL + 'Seattle University ACM Sponsor Information.pdf'} target="_blank" rel="noopener noreferrer" className="cta-button">SPONSORSHIP PACKAGES</a>
             </div>
           </div>
         </div>
